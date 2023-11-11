@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState, useRef } from "react";
 import axios from 'axios';
 import Movie from "./Movie";
@@ -5,14 +6,12 @@ import Footer from "./Footer";
 import { Logo } from '../images/index';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
-import '../App.css';
 
 function Main() {
   const MOVIE_API = "https://api.themoviedb.org/3/";
   const SEARCH_API = MOVIE_API + "search/movie";
   const DISCOVER_API = MOVIE_API + "discover/movie";
   const API_KEY = "3be97d6f1d7aa31ffff889715c42966b"; 
-
   const [playing, setPlaying] = useState(false);
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
@@ -82,7 +81,7 @@ function Main() {
 
   return (
 <div>
-<div className="App" style={{ width: "100%" }}>
+<div className="App1" style={{ width: "100%" }}>
       <div >
       <div className="header">
   <div className="container">
@@ -144,4 +143,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Main; 
